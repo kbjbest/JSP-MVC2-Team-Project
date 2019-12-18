@@ -14,7 +14,7 @@ https://sports.media.daum.net/sports/schedule/kbo 또는 https://tv.kakao.com/to
 ```
 
 ### 2.OpenCV3.4.8 설치
-'''
+```
 Update & Upgrade
 (1) sudo apt-get update
 (2) sudo apt-get upgrade
@@ -89,7 +89,7 @@ Install OpenCV
 (22) sudo make install
 (23) sudo sh -c echo '/usr/local/lib/' > sudo /etc/ld.so.conf.d/opencv.conf
 (24) sudo ldconfig
-'''
+```
 3.YOLO 사용법
 
 YOLO를 실행하기 위해 우선적으로 설치를 해야할 것이 몇가지 있다.
