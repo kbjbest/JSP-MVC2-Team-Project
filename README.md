@@ -45,7 +45,7 @@ Python 헤더와 라이브러리를 설치한다.
 (Pyhton의 Numpy는 매트릭스 연산 등을 빠르게 처리할 수 있어 OpenCV에서 사용된다.)
 (10) sudo apt-get install python2.7-dev python3-dev python-numpy python3-numpy
 
-2.OpenCV 3.4.8 다운로드
+OpenCV 3.4.8 다운로드
 저장할 임시 디렉토리를 생성 후 그 폴더에 OpenCV 3.4.8을 다운받는다.
 (11) mkdir opencv
 (12) cd opencv
