@@ -1,7 +1,7 @@
 ## OS Ubuntu 16.04.6 LTS Ver
 
 ### 1.영상다운 받는 법
-
+```
 크롬브라우저로
 https://sports.media.daum.net/sports/schedule/kbo 또는 https://tv.kakao.com/top
 둘 중에서 영상을 다운받는다.
@@ -10,6 +10,7 @@ https://sports.media.daum.net/sports/schedule/kbo 또는 https://tv.kakao.com/to
 그리고 f12를 눌러 개발자도구 진입 후 Element, Console, Sources, Network와 같은 탭에서 Network로 진입한다.
 네트워크로 진입 후 'mp4'로 필터 검색하면 size와 waterfall이 계속 증가하는 것이 있을 것이다.
 그거를 오른쪽 누른 후 new tab을 하면 새로운 탭에서 영상이 재생될 것이고 ctrl+s를 누르면 영상을 저장할 수 있다.
+```
 
 카카오TV에서 할 경우도 비슷하게 하면 된다
 2.OpenCV3.4.8 설치
