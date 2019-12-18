@@ -90,8 +90,8 @@ Install OpenCV
 (23) sudo sh -c echo '/usr/local/lib/' > sudo /etc/ld.so.conf.d/opencv.conf
 (24) sudo ldconfig
 ```
-3.YOLO 사용법
-
+### 3.YOLO 사용법
+```
 YOLO를 실행하기 위해 우선적으로 설치를 해야할 것이 몇가지 있다.
 'OpenCV', 'CUDA', 'cuDNN'을 설치해야 한다.
 
@@ -116,13 +116,15 @@ OPENCV=1
 이렇게 설정해주면 된다.
 수정한 Makefile을 적용하기 위해 다음 명령어를 입력한다.
 (5) make
-4.데이터 모으기
-
+```
+### 4.데이터 모으기
+```
 ffmpeg 다운 (sudo apt-get install ffmpeg)
 ffmpeg -i filename.mp4 -r 1 foldername/filename_%05d.jpg
 만약 1시간짜리 영상이라면 3600장 정도에 jpg파일이 생성
-5.Boxing
-
+```
+### 5.Boxing
+```
 Yolo_mark 다운로드
 학습을 위해 'Yolo_mark'를 사용해보자.
 ~/경로에서 다음 명령어를 통해 다운로드 한다.
@@ -155,8 +157,9 @@ Boxing을 통해 학습 데이터를 만드는 창이 뜬다. 이전과 다르�
 모든 데이터에 대한 Boxing이 끝나면 esc를 눌러 종료한다.
 ~/Yolo_mark/x64/Release/data/img에 들어가보면 이미지 파일에 대응하는 텍스트 파일이 생성된 모습을 볼 수 있다. 
 텍스트 파일들은 Boxing한 것에 대한 정보들을 담고 있다. 왼쪽부터 순서대로 'Class_number' 'X' 'Y' 'Width' 'Height'에 대한 정보이다. X, Y좌표는 Boxing한 사각형의 중심 좌표를 나타내며, Width와 Height는 각각 사각형의 가로 길이와 세로 길이를 나타낸다.
-6. YOLO 데이터 학습
-
+```
+### 6. YOLO 데이터 학습
+```
 darknet/cfg 경로에서 yolov3.cfg를 연다음
 max_batches = 4000 * 클래스 갯수
 batch=64
@@ -169,3 +172,4 @@ darknet/data 경로에 넣는다.
 obj.data파일은 열어서 train, valid, names, backup경로를 맞춰줘야한다.
 train.txt와 valid.txt는 자동 만들어주는 스크립트를 제작하면 된다.
 모든 설정을 마친 후 darknet을 돌려 학습을 진행한다.
+```
