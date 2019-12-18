@@ -1,6 +1,6 @@
-##OS Ubuntu 16.04.6 LTS Ver
+## OS Ubuntu 16.04.6 LTS Ver
 
-###1.영상다운 받는 법
+### 1.영상다운 받는 법
 
 크롬브라우저로
 https://sports.media.daum.net/sports/schedule/kbo 또는 https://tv.kakao.com/top
